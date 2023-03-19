@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GimoApp</string>
+    <string name="welcome">Miło nam Ciebie gościć!</string>
+    <string name="logIn_policy">Do zalogowania przygotuj\nID rezerwacji</string>
+    <string name="logIn">Zaloguj się</string>
+    <string name="getPassword">Nie mam kodu?</string>
+    <string name="e_g">e.g</string>
+    <string name="id_rezerwacji">ID rezerwacji</string>
+    <string name="title_activity_start">StartActivity</string>
+
+</resources>
