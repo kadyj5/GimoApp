@@ -11,6 +11,13 @@
     <dimen name="normal_text_size">16sp</dimen>
     <dimen name="small_text_size">12sp</dimen>
 
+    <dimen name="arrow_padding">2dp</dimen>
+    <dimen name="button_radius">10dp</dimen>
+
+    <!-- Sign In Activity-->
+    <dimen name="info_text_margin_top">24dp</dimen>
+    <dimen name="card_margin">35dp</dimen>
+    <dimen name="margin_btn_signIn">35dp</dimen>
 
 
 

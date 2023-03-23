@@ -6,10 +6,7 @@
         android:angle="360"
         android:startColor="@color/start_color_btn"
         android:endColor="@color/pinkLogo"
-        android:type="linear"
-        ></gradient>
+        android:type="linear"/>
 
-    <corners
-        android:radius="10dp"
-        ></corners>
+    <corners android:radius="10dp"/>
 </shape>
