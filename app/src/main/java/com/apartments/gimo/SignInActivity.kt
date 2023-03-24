@@ -1,7 +1,9 @@
 package com.apartments.gimo
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.appcompat.widget.Toolbar;
 
 class SignInActivity : AppCompatActivity() {
@@ -13,11 +15,9 @@ class SignInActivity : AppCompatActivity() {
     }
 
     private fun setupActionBar() {
-        setSupportActionBar(findViewById(R.id.sign_in_activity_toolbar))
-        val actionBar = supportActionBar
-        if(actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true)
-            actionBar.setHomeAsUpIndicator(R.drawable.back_arrow)
+        val arrowImage: ImageView = findViewById(R.id.arrow_back_image)
+        arrowImage.setOnClickListener{
+            startActivity(Intent(this, IntroActivity::class.java))
         }
     }
 

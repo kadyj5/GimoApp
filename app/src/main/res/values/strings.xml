@@ -2,7 +2,9 @@
     <string name="app_name">GimoApp</string>
     <string name="welcome">Miło nam Ciebie gościć!</string>
     <string name="signIn_policy">Do zalogowania przygotuj\nID rezerwacji</string>
-    <string name="signIn">Zaloguj się</string>
+
+
+    <string name="signIn_text">Zaloguj się</string>
     <string name="getPassword">Nie mam kodu?</string>
     <string name="e_g">e.g</string>
     <string name="id_rezerwacji">ID rezerwacji</string>
@@ -10,7 +12,7 @@
 
     <string name="move_back">Powrót</string>
 
-    <string name="sign_in_text">Podaj ID twojej rezerwacji</string>
+    <string name="sign_in_text_info">Podaj ID twojej rezerwacji</string>
     <string name="reservationID">ID rezerwacji</string>
 
 </resources>

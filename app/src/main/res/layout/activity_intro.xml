@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
     android:layout_gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".IntroActivity">
+
 
     <ImageView
         android:id="@+id/logo_view"
@@ -14,22 +16,31 @@
         android:scaleType="centerInside"
         android:layout_height="@dimen/intro_screen_logo_height"
         android:src="@drawable/logo"
-        android:layout_margin="@dimen/intro_screen_margins"
-        tools:ignore="ContentDescription" />
+        android:layout_margin="@dimen/logo_intro_screen_margins"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        />
+
+
 
     <ImageView
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/logo_view"
         android:scaleType="centerInside"
         android:alpha="0.3"
         android:background="@drawable/opatowska"
-        android:layout_marginTop="@dimen/intro_screen_opatowska_top"
-        tools:ignore="ContentDescription" />
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_view"
+
+        />
 
     <TextView
-        android:id="@+id/welcome_View"
-        android:layout_width="match_parent"
+        android:id="@+id/tekst_welcome_intro_activity"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
 
@@ -37,56 +48,75 @@
         android:textSize="@dimen/big_text_size"
         android:textColor="@color/pinkLogo"
         android:textStyle="bold"
-        android:layout_margin="@dimen/intro_screen_margins"
+        android:layout_margin="@dimen/margins_in_padding_intro_activity"
         android:layout_below="@id/logo_view"
+
+        app:layout_constraintTop_toBottomOf="@id/logo_view"
+        app:layout_constraintStart_toStartOf="@id/logo_view"
+        app:layout_constraintEnd_toEndOf="@id/logo_view"
+
         />
 
     <TextView
-        android:id="@+id/logIn_instr"
-        android:layout_width="match_parent"
+        android:id="@+id/signIn_instr_tekst"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/welcome_View"
-        android:layout_marginStart="@dimen/intro_screen_margins"
-        android:layout_marginTop="@dimen/intro_screen_margins"
-        android:layout_marginEnd="@dimen/intro_screen_margins"
-        android:layout_marginBottom="@dimen/intro_screen_margins"
+        android:layout_margin="@dimen/margins_in_padding_intro_activity"
+
         android:gravity="center"
         android:text="@string/signIn_policy"
         android:textColor="@color/pinkLogo"
         android:textSize="@dimen/normal_text_size"
-        android:textStyle="normal" />
+        android:textStyle="normal"
+
+        app:layout_constraintEnd_toEndOf="@id/logo_view"
+        app:layout_constraintStart_toStartOf="@id/logo_view"
+        app:layout_constraintTop_toBottomOf="@id/tekst_welcome_intro_activity"
+
+
+        />
 
     <Button
         android:id="@+id/signIn_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/logIn_instr"
+        android:layout_margin="@dimen/margins_in_padding_intro_activity"
+
         android:gravity="center"
-        android:layout_marginStart="@dimen/margin_btn"
-        android:layout_marginEnd="@dimen/margin_btn"
-        android:paddingTop="@dimen/padding_btn"
-        android:paddingBottom="@dimen/padding_btn"
+        android:padding="@dimen/padding_btn"
         android:foreground="?attr/selectableItemBackground"
         android:background="@drawable/shape_button_rounded"
-        android:text="@string/signIn"
+
+        android:text="@string/signIn_text"
         android:textColor="@color/white"
-        android:textSize="@dimen/normal_text_size"/>
+        android:textSize="@dimen/normal_text_size"
+
+        app:layout_constraintEnd_toEndOf="@id/logo_view"
+        app:layout_constraintStart_toStartOf="@id/logo_view"
+        app:layout_constraintTop_toBottomOf="@id/signIn_instr_tekst"
+
+
+        />
 
     <Button
         android:id="@+id/getPassword_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/signIn_button"
-        android:layout_marginTop="@dimen/margin_btn"
+        android:layout_margin="@dimen/margins_in_padding_intro_activity"
+
         android:gravity="center"
-        android:layout_marginStart="@dimen/margin_btn"
-        android:layout_marginEnd="@dimen/margin_btn"
-        android:paddingTop="@dimen/padding_btn"
-        android:paddingBottom="@dimen/padding_btn"
+        android:padding="@dimen/padding_btn"
         android:background="@drawable/shaped_button_white"
         android:foreground="?attr/selectableItemBackground"
+
         android:text="@string/getPassword"
         android:textColor="@color/pinkLogo"
-        android:textSize="@dimen/normal_text_size"/>
+        android:textSize="@dimen/normal_text_size"
 
-</RelativeLayout>
+        app:layout_constraintStart_toStartOf="@id/logo_view"
+        app:layout_constraintEnd_toEndOf="@id/logo_view"
+        app:layout_constraintTop_toBottomOf="@id/signIn_button"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

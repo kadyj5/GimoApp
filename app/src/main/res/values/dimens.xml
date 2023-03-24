@@ -2,9 +2,11 @@
 <resources>
     <dimen name="loading_screen_title_margins_size">12dp</dimen>
     <dimen name="intro_screen_logo_height">150dp</dimen>
-    <dimen name="intro_screen_margins">20dp</dimen>
-    <dimen name="intro_screen_opatowska_top">10dp</dimen>
-    <dimen name="margin_btn">75dp</dimen>
+    
+    <dimen name="logo_intro_screen_margins">25dp</dimen>
+    
+    <dimen name="margins_in_padding_intro_activity">20dp</dimen>
+    <dimen name="margin_btn">50dp</dimen>
     <dimen name="padding_btn">10dp</dimen>
 
     <dimen name="big_text_size">24sp</dimen>
@@ -18,6 +20,8 @@
     <dimen name="info_text_margin_top">24dp</dimen>
     <dimen name="card_margin">35dp</dimen>
     <dimen name="margin_btn_signIn">35dp</dimen>
+    <dimen name="margin_top_text_signInActivity">25dp</dimen>
+    <dimen name="elevation_for_cardView_signInActivity">100dp</dimen>
 
 
 
