@@ -1,7 +1,8 @@
-package com.apartments.gimo
+package com.apartments.gimo.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.apartments.gimo.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

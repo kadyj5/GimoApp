@@ -10,5 +10,5 @@
     <color name="pinkLogo">#B55659</color>
     <color name="start_color_btn">#EA9C9E</color>
     <color name="ligh_pink_background">#ddb1b2</color>
-
+    <color name="snackBarColorError">#F74200</color>
 </resources>
